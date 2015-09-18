@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuário"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="0.1">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lembrar senha"
+            android:layout_weight="1"
+            android:textColor="@color/orange_light"
+            android:textStyle="normal"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/lembrarSenha"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esqueci senha"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/orange_light"
+            android:textStyle="normal"
+            android:layout_marginRight="10dp"
+            android:id="@+id/esqueciSenha"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="0.5">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Facebook"
+            android:background="@color/dark_blue"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_gravity="bottom"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            android:background="@color/orange_light"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_gravity="bottom"
+            android:id="@+id/login"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Stickerz</string>
+    <string name="login">Já tenho cadastro</string>
+    <string name="new_user">Quero me cadastrar</string>
+    <string name="accepted">Ao se cadastrar você está aceitando o nossos</string>
+    <string name="termo">Termos de uso</string>
+</resources>

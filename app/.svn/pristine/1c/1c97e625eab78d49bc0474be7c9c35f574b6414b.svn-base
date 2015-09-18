@@ -1,0 +1,30 @@
+package br.com.android.stickerz;
+
+import android.app.Activity;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+
+import br.com.android.stickerz.fragments.TabsFragment;
+
+public class MainActivity extends BaseActivity {
+
+    private Fragment fragment;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        fragment = new TabsFragment();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.container, fragment).addToBackStack(null)
+                .commit();
+    }
+
+
+}

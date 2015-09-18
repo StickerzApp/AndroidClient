@@ -1,0 +1,15 @@
+<resources>
+
+    <color name="primary">#e67e22</color>
+    <color name="primary_dark">#d35400</color>
+    <color name="accent">#000000</color>
+    <color name="control_highlight">#e67e22</color>
+
+    <color name="transparent">#0000</color>
+    <color name="white">#fff</color>
+    <color name="orange">#d35400</color>
+    <color name="gray">#E2E3E4</color>
+    <color name="orange_light">#e67e22</color>
+    <color name="dark_gray">#7f8c8d</color>
+
+</resources>

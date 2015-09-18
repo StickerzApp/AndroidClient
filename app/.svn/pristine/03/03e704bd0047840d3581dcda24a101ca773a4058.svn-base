@@ -1,0 +1,18 @@
+package br.com.android.stickerz;
+
+import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
+
+/**
+ * Created by brunolemgruber on 14/08/15.
+ */
+public class BaseActivity extends livroandroid.lib.activity.BaseActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+    }
+
+}
