@@ -3,7 +3,6 @@ package br.com.android.stickerz.fragments;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +14,7 @@ import android.widget.TextView;
 import br.com.android.stickerz.R;
 import br.com.android.stickerz.activity.NavigationDrawerActivity;
 import br.com.android.stickerz.util.FontUtils;
-import livroandroid.lib.fragment.*;
+import br.com.android.stickerz.util.PreferencesUtils;
 
 /**
  * Created by brunolemgruber on 14/08/15.
@@ -43,6 +42,9 @@ public class LoginFragment extends BaseFragment {
 
                 intent = new Intent(LoginFragment.this.getActivity(), NavigationDrawerActivity.class);
                 startActivity(intent);
+
+                if(PreferencesUtils.getPreference(LoginFragment.this.getActivity(), "login").equalsIgnoreCase("0"))
+                    PreferencesUtils.addPreference(LoginFragment.this.getActivity(), "login", "1");
             }
         });
 

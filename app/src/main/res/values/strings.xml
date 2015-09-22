@@ -12,7 +12,6 @@
     <string name="friends">Amigos</string>
     <string name="profile">Perfil</string>
     <string name="action_about">Sobre</string>
-
     <string name="nav_drawer_username">Bruno Lemgruber</string>
     <string name="nav_drawer_email">brunoteixeiralc@gmail.com</string>
 </resources>
